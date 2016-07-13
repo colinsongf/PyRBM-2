@@ -32,7 +32,7 @@ class PyRBM():
 
         # Initialize a weight matrix, of dimensions (numOfVisibleUnits x numOfHiddenUnits), using a Gaussian
         # distribution with mean 0 and standard deviation 0.1
-        self.weights = 0.1 * np.random.randn(self.numOfVisibleUnits, self.numOfHiddenUnits)
+        self.weights = 0.01 * np.random.randn(self.numOfVisibleUnits, self.numOfHiddenUnits)
         # Insert weights for the bias units into the first row and first column
         self.weights = np.insert(self.weights, 0, 0, axis = 0)
         self.weights = np.insert(self.weights, 0, 0, axis = 1)
